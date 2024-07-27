@@ -88,10 +88,14 @@
 *** the_archive_title() >>>>> prints the title of an archive
 *** the_archive_description() >>>>> prints the biography(author archive)/description(blog category)
 *** wp_reset_postdata() >>>>> butang na katapusan sa while loop after using custom queries(REMEMBER)
+*** has_excerpt() >>>>> check if naay excerpt ang post
+*** get_post_type() >>>>> returns the type of the post
+*** echo get_the_excerpt(); >>>>> print the excerpt.
 *** echo paginate_links() >>>>> add pagination in blog page
 *** echo site_url('/blog') >>>>> manual linking into pages
 *** echo wp_trim_words(get_the_content(), 18) >>>>> trimming the content
 *** echo get_the_category_list(', ') >>>>> returns the category of a post
+*** echo get_post_type_archive_link('event') >>>>> automatically get url of a post type archive(in this example is event post)
 -->
 
 
