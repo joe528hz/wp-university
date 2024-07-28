@@ -90,6 +90,8 @@
 *** wp_reset_postdata() >>>>> butang na katapusan sa while loop after using custom queries(REMEMBER)
 *** has_excerpt() >>>>> check if naay excerpt ang post
 *** get_post_type() >>>>> returns the type of the post
+*** the_field('event_date') >>>>> prints the value from the plugin(ACF)
+*** get_field('event_date') >>>>> returns the value from the plugin(ACF)
 *** echo get_the_excerpt(); >>>>> print the excerpt.
 *** echo paginate_links() >>>>> add pagination in blog page
 *** echo site_url('/blog') >>>>> manual linking into pages
@@ -105,4 +107,10 @@
  *** wp_enqueue_scripts => gamit para sa scripts and styles
  *** after_setup_theme => gamit para sa title ug sa menu
  *** init => gamit pag creat ug custom post types (naa sa mu-plugins)
+-->
+
+
+<!-- 
+#PLUGINS
+*** advanced custom fields
 -->
