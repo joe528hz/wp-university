@@ -33,7 +33,6 @@ function university_adjust_queries($query){
               'type' => 'numeric'
             )
           ));
-
     }
 }
 add_action('pre_get_posts', 'university_adjust_queries') //right before we get the posts with the query (manipulating default URL based queries)
