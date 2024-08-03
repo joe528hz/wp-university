@@ -92,6 +92,9 @@
 *** get_post_type() >>>>> returns the type of the post
 *** the_field('event_date') >>>>> prints the value from the plugin(ACF)
 *** get_field('event_date') >>>>> returns the value from the plugin(ACF)
+*** is_admin() >>>>> returns true if you are in admin page(backend)
+*** is_post_type_archive('event') >>>>> returns boolean depending sa post type sa parameter
+*** is_main_query() >>>>> returns true if the query is the default url based query (used to avoid accidentally manipulating custom queries)
 *** echo get_the_excerpt(); >>>>> print the excerpt.
 *** echo paginate_links() >>>>> add pagination in blog page
 *** echo site_url('/blog') >>>>> manual linking into pages
@@ -107,6 +110,7 @@
  *** wp_enqueue_scripts => gamit para sa scripts and styles
  *** after_setup_theme => gamit para sa title ug sa menu
  *** init => gamit pag creat ug custom post types (naa sa mu-plugins)
+ *** pre_get_posts => //right before we get the posts with the query (manipulating default URL based queries)
 -->
 
 

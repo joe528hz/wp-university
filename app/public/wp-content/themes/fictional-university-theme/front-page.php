@@ -18,10 +18,10 @@
           <?php
             $today = date('Ymd');
             $homepageEvents = new WP_Query(array(
-              'posts_per_page' => -1,
-              'post_type' => 'event',
+              'posts_per_page' => 2, // (-1 returns all the post)
+              'post_type' => 'event', //only post type events
               'meta_key' => 'event_date', // the custom field from AFC
-              'orderby' => 'meta_value_num', // num kay numbers and dates
+              'orderby' => 'meta_value_num', // num kay numbers and dates (title for sorting by title)
               'order' => 'ASC',
               'meta_query' => array(
                 array(
