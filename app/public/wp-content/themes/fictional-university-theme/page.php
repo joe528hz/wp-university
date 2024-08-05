@@ -71,6 +71,7 @@
 *** get_the_title() >>>>> returns title of the page
 *** the_permalink() >>>>> permalink of the current post
 *** get_permalink() >>>>> returns permalink
+*** get_the_permalink() >>>>> returns permalink
 *** wp_list_pages() >>>>> returns list of all pages (outputing the pages out of the screen)
 *** get_pages() >>>>> almost identical to wp_list_pages but (outputing the pages on the memory) if has children returns collection of children pages if none returns null which is equals to falsy value
 *** the_post() >>>>> iterator ni siya sa while loop
@@ -95,12 +96,15 @@
 *** is_admin() >>>>> returns true if you are in admin page(backend)
 *** is_post_type_archive('event') >>>>> returns boolean depending sa post type sa parameter
 *** is_main_query() >>>>> returns true if the query is the default url based query (used to avoid accidentally manipulating custom queries)
+*** get_query_var('paged', 1) >>>>> used to get all sorts of information about the current url (1 is fallback page)
 *** echo get_the_excerpt(); >>>>> print the excerpt.
 *** echo paginate_links() >>>>> add pagination in blog page
 *** echo site_url('/blog') >>>>> manual linking into pages
-*** echo wp_trim_words(get_the_content(), 18) >>>>> trimming the content
+*** echo wp_trim_words(get_the_conte  nt(), 18) >>>>> trimming the content
 *** echo get_the_category_list(', ') >>>>> returns the category of a post
 *** echo get_post_type_archive_link('event') >>>>> automatically get url of a post type archive(in this example is event post)
+
+
 -->
 
 
